@@ -1,0 +1,556 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #f8f9fa;
+    position: relative;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.stik{
+    z-index: 1;
+    position: fixed;
+    width: 100%;
+    top: 0px;
+}
+
+.headerText{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    z-index: 5;
+}
+
+
+.obrazek{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.cien{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    height: 100%; 
+    width: 100%;
+    z-index: -10;
+}
+
+
+.btnLogIn{
+    background: none;
+    border: none;
+    color:white
+}
+
+.mainText{
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fBtn{
+    background: none;
+    border-radius: 15px;
+    color: red
+}
+
+.underline{
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 200px;
+    height: 8px;
+    background-color:#343a40;
+    border-radius: 10px;
+}
+
+
+
+.fa-angellist{
+    font-size: 30px;
+}
+
+.aboutUsCardTitle{
+    font-size: 20px;
+}
+
+.aboutUsCardText{
+    font-size: 14px;
+}
+
+.row{
+    padding: 10px;
+    border-radius: 10px;
+}
+
+i{
+    font-size: 25px;
+}
+
+.obrazek2{
+    position: relative;
+    background-attachment: fixed;
+    z-index: 0;
+}
+
+.forgot:hover{
+    color:#0275d8;
+    border: none;
+    cursor: pointer;
+}
+
+.cien2{
+    position: absolute;
+    background-color: rgba(0,0,0,0.6);
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+input:disabled{
+    color: rgb(9, 194, 9) !important;
+    font-style: italic;
+}
+
+.ramka{
+    
+    box-shadow: 10px 10px 10px rgba(0,0,0,0.6);
+    margin: 30px 15px;
+    padding: 20px;
+    transition: transform 0.2s;
+}
+
+span{
+    font-weight: bold;
+}
+
+.ramka:hover{
+    transform: scale(1.1);
+}
+
+.aktywna{
+    background-color: #0275d8;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+    object-fit:cover;
+    object-position: top;
+}
+
+.obrazek3{
+    position: relative;
+    width: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    z-index: 0;
+}
+
+.cien3{
+    position: absolute;
+    background-color: rgba(0,0,0,0.7);
+    width: 100%;
+    height: 100%;
+    z-index: -10;
+}
+
+.stopka{
+    width: 100%;
+    height: 50px;
+    background-color: silver;
+    line-height: 50px;
+    text-align: center;
+}
+
+.fa-at{
+    font-size: 15px;
+}
+
+.fa-phone-alt{
+    font-size: 15px;
+}
+
+select{
+    margin-bottom: 10px;
+    height: 50px;
+    width: 300px;
+    border-radius: 15px;
+    border: 3px solid #343a40;
+    outline:none;
+    text-align-last:center;
+}
+
+option:focus{
+
+    border-radius: 15px;
+    border: 5px solid blue;
+    text-decoration: none;
+    outline:none;
+    
+}
+
+.mapBtn{
+    color: white;
+    height: 50px;
+    width: 80px;
+    border-radius: 15px;
+    padding: 10px;
+    background-color: transparent;
+    border: 3px solid #0275d8;
+    transition: 0.5s;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    font-weight: bold;
+    color: white;
+}
+
+.navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
+    color: #0275d8;
+}
+
+.dostawaCzcionka{
+    font-family: 'Caveat', 'cursive';
+    text-align: center;
+}
+
+.mapBtn:hover{
+    height: 60px;
+    width: 90px;
+    border: 3px solid #343a40;
+    background-color: #0275d8;
+}
+
+input{
+    display: block;
+}
+
+.contactInput{
+
+    width:100%;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+    outline: none;
+    padding-left: 8px;
+    
+}
+
+.PhoneInputInput{
+    outline: none;
+    border-radius: 15px;
+    padding: 5px;
+}
+
+.contactArea{
+    width: 100%;
+    height: 200px;
+    border-radius: 15px;
+    padding: 5px;
+    margin: 10px;
+    outline: none;
+    border: 2px solid #343a40;
+}
+
+.bestseller{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 30px;
+    width: 150px;
+    line-height: 25px;
+    border-radius: 20px;
+    transform: translate(-50%,-50%);
+    color: white;
+    text-shadow: 2px 2px 5px black;
+}
+
+
+.koszyk{
+    left: 95%;
+    padding-top: 15px;
+    padding-right: 10px;
+    padding-left: 10px;
+    border-radius: 15px;
+    top:50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    text-align: center;
+    transform: translate(-50%,-50%);
+    background-color: royalblue;
+}
+
+.okno{
+    position:fixed;
+    left:0;
+    right:0;
+    height: 90%;
+    width: 90%;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    border: 3px solid black;
+    z-index: 2;
+    overflow-y: scroll;
+}
+
+
+.product-list{
+
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.exitBtn{
+    position: sticky;
+    padding: 5px;
+    top: 3%;
+    left: 98%;
+    transform: translate(-50%,-50%);
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+}
+
+.exitBtn2{
+    position: sticky;
+    top: 2%;
+    left: 97%;
+    height: 20px;
+    width: 20px;
+    border: 0px;
+    background-color: rgba(0,0,0,0);
+}
+
+.kosz{
+    display: inline;
+    color: black;
+    cursor: pointer;
+}
+
+.kosz:hover{
+    color: white;
+}
+
+.fb:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.ig:hover{
+    cursor: pointer;
+    color: white;
+}
+
+.exitBtn:hover{
+    cursor: pointer;
+    color: #0275d8;
+}
+
+.exitBtn2:hover{
+    cursor: pointer;
+    color: #0275d8;
+}
+
+.plus{
+    cursor: pointer;
+}
+
+
+.plus:hover{
+    color: red;
+    transition: 0.3s linear;
+}
+
+.cardOkno{
+    margin: 20px;
+}
+
+.wylaczony{
+    display: none;
+}
+
+.zamowienia{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 30px;
+    border-radius: 15px;
+    text-align: center;
+}
+
+.spinner{
+    position: absolute;
+    left: 50%;
+    width: 6em;
+    height: 6em;
+    top: 100%;
+    margin-top: 3em;
+    margin-left: -3em;
+}
+
+.spinner2{
+    position: absolute;
+    left: 50%;
+    width: 6em;
+    height: 6em;
+    top: 45%;
+    margin-top: 3em;
+    margin-left: -3em;
+}
+
+div .card-header .card-header:hover{
+    background-color: #0275d8;
+    cursor: pointer;
+}
+
+.zamowienia p{
+    margin: 0 !important;
+    padding: 10px;
+}
+
+.dostawa-box{
+    min-width: 175px;
+    display: table;
+    border: 3px solid #343a40;
+    padding: 25px;
+    border-radius: 5px;
+    line-height: 25px;
+    margin-top: 10px;
+    cursor: pointer;
+    transition: .2s linear;
+}
+
+.dostawa-box:hover{
+    transform: scale(1.1);
+}
+
+.dostawa-box p {
+    margin: 0px;
+    display: table-cell;
+}
+
+.dostawa-input{
+    width: 100%;
+    height: 50px;
+    border-radius: 15px;
+    border: 3px solid #343a40;
+    text-align-last: center;
+    outline: none;
+    margin-bottom: 8px;
+}
+
+.dostawa-input .PhoneInputInput{
+    border: none;
+}
+
+.PhoneInputCountry{
+    margin-left: 25px;
+}
+
+.linia{
+    background-color:#343a40;
+    width: 3px;
+}
+
+.dropdown-item .active{
+    color:red !important;
+}
+
+.successc{
+    display: none;
+}
+
+.radius{
+    border-radius: 15px;
+}
+
+*::-webkit-scrollbar {
+    width: 0.5em;
+  }
+   
+  *::-webkit-scrollbar-track {
+    background-color: #343a40;
+  }
+   
+  *::-webkit-scrollbar-thumb {
+    background-color: royalblue;
+    outline: 5px solid darkblue;
+  }
+
+  @keyframes strzalka {
+    0%   {transform: translateY(0);}
+    25%  {transform: translateY(15px);}
+    50% {transform: translateY(-15px);}
+    100% {transform: translateY(0);}
+  }
+
+ 
+ @media (max-width: 992px) {
+    .okno .exitBtn {
+      transform: translate(-5%,-50%);
+    }
+    .exitBtn2{
+        left: 89%;
+    }
+  }
+
+  @media (min-width: 502px){
+    .form-group{
+        margin-right: 10px;
+    }
+  }
+
+  @media (max-width: 502px) {
+    .linia{
+        display: none;
+    }
+    .logWindow{
+        justify-content: center !important;
+
+    }
+    .logWindow form {
+        margin-bottom: 30px;
+    }
+    .form-row{
+        justify-content: space-evenly !important;
+        flex-wrap: wrap !important;
+        text-align: center;
+        margin-right: 0px !important;
+    }
+  }
+  
+
+  @media (max-width: 991px) {
+    .koszyk {
+        padding-top: 5px;
+        width: 80%;
+        left: 50% !important;
+        top: 95% !important;
+        transform: translate(-50%,-50%);
+        z-index: 2;
+    }
+
+    .koszyk p{
+        padding-right: 10px;
+        padding-left: 10px;
+        display: inline;
+    }
+  }
+
